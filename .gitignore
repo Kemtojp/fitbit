@@ -1,0 +1,10 @@
+# Datos crudos y procesados
+data/
+*.parquet
+*.csv
+
+# Entornos virtuales y temporales de Python
+venv/
+.env
+__pycache__/
+.ipynb_checkpoints/
