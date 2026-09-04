@@ -22,8 +22,7 @@ Este proyecto implementa una solución integral de Big Data de extremo a extremo
 
 ## 🏗️ 2. Arquitectura de la Solución
 
-El pipeline sigue un flujo moderno de ingeniería y análisis de datos:
-
+```text
 Archivos CSV Brutos (data/raw)
        │
        ▼
@@ -37,6 +36,7 @@ Google Cloud BigQuery (US Multi-Region) ──► Tablas limpias + Vistas SQL mo
        │
        ▼
 Looker Studio Dashboard ──► Visualizaciones ejecutivas interactivas
+```
 
 ### Tecnologías Utilizadas:
 * **Entorno y Control de Versiones:** Visual Studio Code, Git, GitHub.
@@ -49,6 +49,7 @@ Looker Studio Dashboard ──► Visualizaciones ejecutivas interactivas
 
 ## 📂 3. Estructura del Repositorio
 
+```text
 Fitbit/
 ├── data/
 │   ├── raw/                  <- CSVs originales de FitBit
@@ -68,6 +69,7 @@ Fitbit/
 ├── .gitignore                <- Exclusión de datos pesados y credenciales
 ├── requirements.txt          <- Dependencias del entorno Python
 └── README.md                 <- Documentación técnica y de negocio
+```
 
 ---
 
