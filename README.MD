@@ -55,10 +55,10 @@ Fitbit/
 │   ├── raw/                  <- CSVs originales de FitBit
 │   └── processed/            <- Archivos limpios en formato Parquet
 ├── images/
-│   └── dashboard_preview.png <- Captura de pantalla del dashboard
+│   ├── imagesdashboard_preview1.png <- Captura de pantalla de dashboard pagina 1
+│   └── imagesdashboard_preview2.png <- Captura de pantalla de dashboard pagina 2
 ├── notebooks/
-│   ├── miniproyecto_analisis.ipynb  <- Análisis exploratorio y gráficos
-│   └── spark_etl_pipeline.ipynb     <- Prototipado del pipeline Spark
+│   └── miniproyecto_analisis.ipynb  <- Análisis exploratorio y gráficos
 ├── sql/
 │   ├── 01_views_daily.sql    <- Vista modelada de KPIs diarios y descanso
 │   └── 02_views_hourly.sql   <- Vista horaria agrupada por franjas
