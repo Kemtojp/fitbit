@@ -76,37 +76,43 @@ Fitbit/
 ## ⚙️ 4. Ejecución del Pipeline
 
 ### 1. Clonar el repositorio e instalar dependencias:
+```
 git clone [https://github.com/Kemtojp/fitbit.git](https://github.com/Kemtojp/fitbit.git)
 cd fitbit
 pip install -r requirements.txt
+```
 
 ### 2. Ejecutar el Pipeline ETL con Spark:
+```
 python src/etl_pipeline.py
+```
 *(Limpia los datos, estandariza formatos temporales, genera métricas de negocio y exporta los datasets optimizados a data/processed/*.parquet)*
 
 ### 3. Cargar datos limpios a BigQuery:
 *(Asegúrate de colocar tu clave credentials.json en la raíz)*
+```
 python src/bigquery_loader.py
-
+```
 ---
 
 ## 📈 5. Visualización de Resultados (Looker Studio)
 
 El informe ejecutivo interactivo fue desarrollado en **Looker Studio**, consumiendo directamente las vistas `view_daily_kpis` y `view_hourly_trends` alojadas en BigQuery.
 
-🔗 **[Abrir Dashboard Interactivo en Looker Studio](https://datastudio.google.com/s/rwc_tpdbFCM)**
+🔗 **[Abrir Dashboard Interactivo en Looker Studio](https://datastudio.google.com/s/pkhqHUXnsJw)**
 
 ### Captura del Dashboard:
-![Dashboard Preview](images/dashboard_preview.png)
+![Dashboard Preview1](images/dashboard_preview1.png)
+![Dashboard Preview2](images/dashboard_preview2.png)
 
 ---
 
 ## 💡 6. Conclusiones y Hallazgos Principales
 
-* **Predominio del sedentarismo (81.3%):** El usuario promedio pasa más del 80% de su jornada despierto en inactividad, dedicando apenas un 2.8% a actividades de intensidad moderada o alta.
+* **Distribución de actividad y sedentarismo:** Aunque el 43.8% de las jornadas evaluadas alcanzan la meta de "Muy Activo" ($\ge$10.000 pasos), el tiempo sedentario promedio sigue siendo dominante, alcanzando 991 minutos diarios (más del 80% de las horas despierto).
 * **Déficit de descanso:** Cerca del 44% de las noches analizadas registran menos de 7 horas de sueño, situando el promedio por debajo del estándar médico recomendado.
 * **Relación Pasos vs. Calorías:** Existe una correlación lineal positiva directa: mantener promedios superiores a 10.000 pasos asegura superar la barrera de 2.500 calorías de gasto diario.
-* **Patrones temporales definidos:** Los picos de mayor esfuerzo ocurren en dos franjas marcadas: entre las 12:00 y 14:00 hrs y su punto máximo entre las 17:00 y 19:00 hrs (promediando ~600 pasos/hora a las 18:00 hrs).
+* **Patrones temporales definidos:** Los picos de mayor esfuerzo ocurren en dos franjas marcadas: entre las 12:00 y 14:00 hrs y su punto máximo entre las 17:00 y 19:00 hrs (alcanzando su pico máximo a las 18:00 hrs con 599 pasos promedio).
 
 ---
 
@@ -119,4 +125,4 @@ El informe ejecutivo interactivo fue desarrollado en **Looker Studio**, consumie
 ---
 
 ## 👤 Autor
-* **Juan Pablo** — Desarrollo integral de extremo a extremo (Ingesta, ETL en Apache Spark, Data Warehouse en BigQuery, modelado SQL y Dashboard en Looker Studio).
+* **Juan Velasquez** — Desarrollo integral de extremo a extremo (Ingesta, ETL en Apache Spark, Data Warehouse en BigQuery, modelado SQL y Dashboard en Looker Studio).
