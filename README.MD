@@ -108,7 +108,7 @@ El informe ejecutivo interactivo fue desarrollado en **Looker Studio**, consumie
 
 ## 💡 6. Conclusiones y Hallazgos Principales
 
-* **Distribución de actividad y sedentarismo:** Aunque el 43.8% de las jornadas evaluadas alcanzan la meta de "Muy Activo" ($\ge$10.000 pasos), el tiempo sedentario promedio sigue siendo dominante, alcanzando 991 minutos diarios (más del 80% de las horas despierto).
+* **Distribución de actividad y sedentarismo:** Aunque el 43.8% de las jornadas evaluadas alcanzan la meta de "Muy Activo" ( > 10.000 pasos), el tiempo sedentario promedio sigue siendo dominante, alcanzando 991 minutos diarios (más del 80% de las horas despierto).
 * **Déficit de descanso:** Cerca del 44% de las noches analizadas registran menos de 7 horas de sueño, situando el promedio por debajo del estándar médico recomendado.
 * **Relación Pasos vs. Calorías:** Existe una correlación lineal positiva directa: mantener promedios superiores a 10.000 pasos asegura superar la barrera de 2.500 calorías de gasto diario.
 * **Patrones temporales definidos:** Los picos de mayor esfuerzo ocurren en dos franjas marcadas: entre las 12:00 y 14:00 hrs y su punto máximo entre las 17:00 y 19:00 hrs (alcanzando su pico máximo a las 18:00 hrs con 599 pasos promedio).
