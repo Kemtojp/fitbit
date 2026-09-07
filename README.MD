@@ -83,13 +83,12 @@ pip install -r requirements.txt
 ```
 
 ### 2. Ejecutar el Pipeline ETL con Spark:
+Limpia los datos, estandariza formatos temporales, genera métricas de negocio y exporta los datasets optimizados a data/processed/*.parquet
 ```
 python src/etl_pipeline.py
 ```
-*(Limpia los datos, estandariza formatos temporales, genera métricas de negocio y exporta los datasets optimizados a data/processed/*.parquet)*
-
 ### 3. Cargar datos limpios a BigQuery:
-*(Asegúrate de colocar tu clave credentials.json en la raíz)*
+Asegúrate de colocar tu clave credentials.json en la raíz
 ```
 python src/bigquery_loader.py
 ```
@@ -102,8 +101,8 @@ El informe ejecutivo interactivo fue desarrollado en **Looker Studio**, consumie
 🔗 **[Abrir Dashboard Interactivo en Looker Studio](https://datastudio.google.com/s/pkhqHUXnsJw)**
 
 ### Captura del Dashboard:
-![Dashboard Preview1](images/dashboard_preview1.png)
-![Dashboard Preview2](images/dashboard_preview2.png)
+![Dashboard Preview1](images/imagesdashboard_preview1.png)
+![Dashboard Preview2](images/imagesdashboard_preview2.png)
 
 ---
 
